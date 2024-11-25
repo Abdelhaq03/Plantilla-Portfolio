@@ -1,0 +1,34 @@
+<svg
+  {...Astro.props}
+  xmlns="http://www.w3.org/2000/svg"
+  width="256"
+  height="256"
+  viewBox="0 0 256 256"
+  preserveAspectRatio="xMidYMid"
+>
+  <!-- Fondo transparente -->
+  <rect width="256" height="256" fill="none" />
+  <!-- Logotipo principal -->
+  <g transform="translate(40, 40)">
+    <!-- Forma principal (diamante) -->
+    <path
+      d="M88 0 0 88l88 88 88-88L88 0Z"
+      fill="#00C4B3"
+    />
+    <!-- Detalle izquierdo (sombra) -->
+    <path
+      d="M0 88v62l88 26 0-88L0 88Z"
+      fill="#2CB7A8"
+    />
+    <!-- Detalle superior (brillo) -->
+    <path
+      d="M88 0 0 88h62L150 0H88Z"
+      fill="#0075C9"
+    />
+    <!-- Detalle inferior (azul oscuro) -->
+    <path
+      d="M88 88v88l62-26 0-62-62 0Z"
+      fill="#005DAA"
+    />
+  </g>
+</svg>

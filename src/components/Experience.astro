@@ -1,0 +1,26 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Marzo 2024 - Junio 2024",
+    title: "Web Developer",
+    company: "Iberfan Soluciones de Tecnología S.L",
+    description: [
+      "Realización de soluciones web con PHP",
+      "Manejo de Base de Datos (MySQL, PostgreSQL)",
+      "Migración de datos",
+      "Integración de APIs",
+      "Documentación",
+    ],
+  },
+];
+---
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
